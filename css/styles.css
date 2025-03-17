@@ -843,6 +843,10 @@ color: #4d5ae5;
 }
 
 .checkbox {
+  letter-spacing: 0.04em;
+  color: #8e8f99;;
+  line-height: 1.17;
+  font-size: 12px;
   position: relative;
   display: flex;
   align-items: center;
@@ -855,23 +859,17 @@ color: #4d5ae5;
 }
 
 .checkmark {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border-radius: 2px;
   border: 1px solid #2E2F42;
   margin-right: 10px;
   display: inline-block;
-  background-color: transparent; /* Прозрачный фон по умолчанию */
+  fill: transparent; /* Прозрачный фон по умолчанию */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox input:checked + .checkmark {
-  background-color: #404BBF; /* Синий фон */
-  border-color: #404BBF;
-  background-image: url('../images/icons.svg#icon-tick'); /* Рабочий SVG */
-  background-repeat: no-repeat;
-  background-size: 10px 8px; /* Размер иконки */
-  background-position: center; /* Центрирование */
-}
+
 
 
 

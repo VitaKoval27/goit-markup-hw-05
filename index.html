@@ -509,15 +509,15 @@
               <label for="user-comment"  class="label-form"> Comment </label>
               <textarea  name="textinput" id="user-comment" class="input-form textarea" rows="5" placeholder="Text input"></textarea>
             </div>
-
-            <label for="checkbox" class="checkbox"> 
-              <span class="checkmark"></span> 
-              <span class="label-form">I accept the terms and conditions of the 
+            <div>
+              <input type="checkbox" id="user-privicy" value="true" name="user-privicy" class="input-checkbox">
+              <label for="user-privicy" class="checkbox label-form"> I accept the terms and conditions of the 
                 <a href="" class="privacy-police">Privacy Policy</a>
-              </span>
-              <input type="checkbox" id="checkbox">
-            </label>
-            
+                <span class="checkmark">
+                  <svg class="icon icon-tick"><use href="./images/icons.svg#icon-tick"></use></svg>
+                </span> 
+                </label>
+          </div>
          
           <button type="submit" class="form-btn">Send</button>
         </form>
