@@ -550,10 +550,11 @@ ul {
  letter-spacing: 0.04em;
  padding-left: 16px;
  cursor: pointer;
+  color:#ffffff;
 }
 .subscribe::placeholder{
   
-  color: #fff;
+  color: #ffffff;
  
 }
 
