@@ -523,6 +523,7 @@ ul {
 }
 
 .form-subscribe{
+  gap: 24px;
   display: flex;
   flex-direction: row;
 }
@@ -542,16 +543,18 @@ ul {
   width: 264px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background:#2E2F42;
-}
-.subscribe::placeholder{
+  background: transparent;
   font-weight: 400;
   font-size: 12px;
  line-height: 2;
  letter-spacing: 0.04em;
+ padding-left: 16px;
+ cursor: pointer;
+}
+.subscribe::placeholder{
+  
   color: #fff;
-  padding-left: 16px;
-  cursor: pointer;
+ 
 }
 
 .subscribe-btn{
@@ -562,7 +565,7 @@ ul {
   gap: 16px;
   border-radius: 4px;
   padding: 0px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   margin-left: 24px;
@@ -572,8 +575,12 @@ ul {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  cursor: pointer;
+  border: none;
 }
-
+.icon-frame{
+  margin-left: 16px;
+}
 
   
 
