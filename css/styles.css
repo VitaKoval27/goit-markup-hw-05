@@ -644,7 +644,7 @@ ul {
   position: absolute;
   top:24px;
   right:24px;
-  margin-bottom: 24px;
+ 
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
@@ -677,7 +677,7 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
+  
   margin-bottom: 16px;
   
 }
@@ -686,6 +686,9 @@ ul {
   flex-direction: column;
   position: relative; 
 }
+.modal-form > :nth-child(3) {
+  margin-bottom: 0;
+}
 
 
 .form-group{
@@ -693,8 +696,51 @@ ul {
   flex-direction: column;
   margin-bottom: 8px;
 }
+.form-group
 .form-group-checkbox{
   margin-bottom: 16px;
+}
+
+.label-form{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+
+
+.wrapper-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #2E2F42; /* Базовий колір */ 
+}
+
+
+.wrapper-input:focus-within .icon-input {
+  fill: #4d5ae5; /* блакитний кол иконки */
+}
+.wrapper-input:focus-within {
+  color: #4d5ae5; /* колір д для активного стану */
+  border: 1px solid #4D5AE5; 
+}
+
+
+.input-form{
+  
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-form:focus{
+  border-color: #4D5AE5;
 }
 
 .icon-input{
@@ -719,6 +765,7 @@ ul {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
+  margin-bottom: 16px;
 }
 
 .input-form.textarea:hover {
@@ -743,65 +790,20 @@ textarea:focus::placeholder {
   color: #4d5ae5;
 }
 
-.label-form{
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  margin-bottom: 4px;
-}
-
-
-
-.input-form{
-  
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
-  width: 100%;
-  height: 40px;
-  background-color: transparent;
-  padding-left: 38px;
-  outline: transparent;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.input-form:focus{
-  border-color: #4D5AE5;
-}
-
-
-
-
-
-.wrapper-input:focus-within .icon-input {
-  fill: #4d5ae5; /* блакитний кол иконки */
-}
-.wrapper-input:focus-within {
-  color: #4d5ae5; /* колір д для активного стану */
-  border: 1px solid #4D5AE5; 
-}
-
-
-
-.wrapper-input {
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: #2E2F42; /* Базовий колір */
-  height: 58px;
-  width: 100%;
-  overflow: visible;
-}
-
-
-
 
 .privacy-police{
 line-height: 1.33333;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #4d5ae5;
+margin-left: 4px;
 }
+
+.privacy-police:hover {
+  
+  color: #404BBF;
+}
+
 
 .form-btn{
   display: block;
@@ -822,7 +824,7 @@ color: #4d5ae5;
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff; 
-  margin-bottom: 24px;
+ 
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -830,14 +832,7 @@ color: #4d5ae5;
  background: #404BBF ;
 }
  
-.label-form {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-  margin-bottom: 4px;
-}
+
 
 .checkbox {
   letter-spacing: 0.04em;
@@ -848,14 +843,9 @@ color: #4d5ae5;
   display: flex;
   align-items: center;
   cursor: pointer;
-  user-select: none;
-  
+  user-select: none; 
   
 }
-
-
-
-
 
 .checkmark {
   
@@ -886,14 +876,6 @@ color: #4d5ae5;
 }
 
 
-.privacy-police{
-  margin-left: 4px;
-}
-
-.privacy-police:hover {
-  
-  color: #404BBF;
-}
 
 .input-checkbox:checked + label .checkmark {
   background-color: #404bbf; /* Цвет фона */
@@ -906,10 +888,10 @@ color: #4d5ae5;
   visibility: visible;
 
 }
-
+ /*
 .checkmark .icon-tick {
-  visibility: hidden; /* Вместо display: none */
-}
+  visibility: hidden; 
+} */
 
 
 
