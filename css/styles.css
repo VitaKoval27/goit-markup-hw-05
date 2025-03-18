@@ -713,7 +713,7 @@ ul {
 
 .wrapper-input {
   position: relative;
- 
+ height: 40px;
   color: #2E2F42; /* Базовий колір */ 
 }
 
