@@ -669,12 +669,9 @@ ul {
 .icon-close-black{
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-close-black:hover{
-  fill: #ffffff
-}
-
-.icon-close-black:focus{
-  fill: #ffffff
+.reset:hover .icon-close-black,
+.reset:focus .icon-close-black {
+  fill: #ffffff; /* Меняем цвет иконки при hover и focus кнопки */
 }
 
 
