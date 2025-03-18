@@ -695,10 +695,11 @@ ul {
 .form-group{
   /*
   display: flex;
-  position: relative;
+  
   flex-direction: column; 
   */
   margin-bottom: 8px;
+  position: relative;
 }
 
 .form-group-checkbox{
@@ -721,8 +722,8 @@ ul {
   align-items: center;
   position: relative;
   height: 40px;
-   
-  width: 100%;
+  overflow:hidden;
+  width:100%;
 }
 
 
