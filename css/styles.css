@@ -908,7 +908,7 @@ color: #4d5ae5;
 
 .input-checkbox:checked + label .checkmark .icon-tick {
   fill: #F4F4FD; /* Задаем цвет иконки */
-  display: block; /* Показываем иконку */
+  visibility: visible;
 
 }
 
