@@ -628,11 +628,6 @@ ul {
   opacity:1;
 }
 
-.modal-form{
-  display: flex;
-  flex-direction: column;
-  position: relative; 
-}
 
   
 .reset{
@@ -686,6 +681,11 @@ ul {
   margin-bottom: 16px;
   
 }
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  position: relative; 
+}
 
 
 .form-group{
@@ -696,6 +696,7 @@ ul {
 .form-group-checkbox{
   margin-bottom: 16px;
 }
+
 .icon-input{
   position: absolute;
   left: 16px;
@@ -767,9 +768,6 @@ textarea:focus::placeholder {
 }
 
 
-.wrapper-input:focus-within {
-  border: 1px solid #4D5AE5; 
-}
 
 
 
@@ -778,6 +776,7 @@ textarea:focus::placeholder {
 }
 .wrapper-input:focus-within {
   color: #4d5ae5; /* колір д для активного стану */
+  border: 1px solid #4D5AE5; 
 }
 
 
@@ -787,22 +786,11 @@ textarea:focus::placeholder {
   display: flex;
   align-items: center;
   color: #2E2F42; /* Базовий колір */
+  height: 58px;
 }
 
 
-/*
-.wrapper-input .icon-input {
-  position: absolute;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 4px;
-  padding: 3px 0px;
-  width: 18px;
-  height: 24px;
- 
-}*/
+
 
 .privacy-police{
 line-height: 1.33333;
@@ -866,6 +854,7 @@ color: #4d5ae5;
 
 
 .checkmark {
+  
   position: absolute;
   width: 16px;
   height: 16px;
@@ -878,8 +867,10 @@ color: #4d5ae5;
   justify-content: center;
   align-items: center;
   fill: transparent; 
+ 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .checkbox.label-form {
   padding-left: 16px; /* Специализированный отступ только для чекбокса */
 }
