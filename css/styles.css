@@ -611,8 +611,8 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%); 
   min-height: 584px;
-  max-width: 408px; /* Фиксированная ширина */
- 
+  max-width: 408px; 
+
   background: #fcfcfc; /* Белый фон */
   border-radius: 4px; /* Закруглённые углы */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -687,7 +687,9 @@ ul {
   flex-direction: column;
   margin-bottom: 8px;
 }
-
+.form-group-checkbox{
+  margin-bottom: 16px;
+}
 .icon-input{
   position: absolute;
   left: 16px;
@@ -740,9 +742,7 @@ textarea:focus::placeholder {
   margin-bottom: 4px;
 }
 
-input[type="checkbox"] {
-  margin-right: 8px; 
-}
+
 
 .input-form{
   
@@ -783,7 +783,7 @@ input[type="checkbox"] {
 }
 
 
-
+/*
 .wrapper-input .icon-input {
   position: absolute;
   display: flex;
@@ -795,7 +795,7 @@ input[type="checkbox"] {
   width: 18px;
   height: 24px;
  
-}
+}*/
 
 .privacy-police{
 line-height: 1.33333;
@@ -850,19 +850,21 @@ color: #4d5ae5;
   align-items: center;
   cursor: pointer;
   user-select: none;
+  
+  
 }
 
-.checkbox input {
-  display: none; 
-}
+
+
+
 
 .checkmark {
-  order: -1;
+  position: absolute;
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 10px;
+  
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -889,11 +891,13 @@ color: #4d5ae5;
 .input-checkbox:checked + label .checkmark {
   background-color: #404bbf; /* Цвет фона */
   border: none; /* Убираем стандартную границу */
+  fill:#f4f4fd
 }
 
 .input-checkbox:checked + label .checkmark .icon-tick {
   fill: #F4F4FD; /* Задаем цвет иконки */
   display: block; /* Показываем иконку */
+
 }
 
 .checkmark .icon-tick {
