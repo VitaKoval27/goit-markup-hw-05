@@ -612,7 +612,7 @@ ul {
   transform: translate(-50%, -50%); 
   min-height: 584px;
   max-width: 408px; 
-
+  
   background: #fcfcfc; /* Белый фон */
   border-radius: 4px; /* Закруглённые углы */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -634,13 +634,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  
   border-radius: 50%;
   background-color: #E7E9FC;
   width: 24px;
   height: 24px;
-  color: #2E2F42;
-  text-align: center;
+  
   position: absolute;
   top:24px;
   right:24px;
@@ -681,6 +680,7 @@ ul {
   margin-bottom: 16px;
   
 }
+/*
 .modal-form{
   display: flex;
   flex-direction: column;
@@ -689,11 +689,15 @@ ul {
 .modal-form > :nth-child(3) {
   margin-bottom: 0;
 }
+  */
 
 
 .form-group{
+  /*
   display: flex;
-  flex-direction: column;
+  position: relative;
+  flex-direction: column; 
+  */
   margin-bottom: 8px;
 }
 
@@ -702,6 +706,7 @@ ul {
 }
 
 .label-form{
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -712,9 +717,12 @@ ul {
 
 
 .wrapper-input {
+  display: flex;
+  align-items: center;
   position: relative;
- height: 40px;
-  color: #2E2F42; /* Базовий колір */ 
+  height: 40px;
+   
+  width: 100%;
 }
 
 
@@ -788,7 +796,11 @@ textarea:focus::placeholder {
 
 
 .privacy-police{
-line-height: 1.33333;
+ 
+font-weight: 400;
+font-size: 12px;
+letter-spacing: 0.04em;
+line-height: 1.33;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 color: #4d5ae5;
@@ -803,9 +815,6 @@ margin-left: 4px;
 
 .form-btn{
   display: block;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
@@ -813,7 +822,7 @@ margin-left: 4px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
-  align-self: center;
+  margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -831,39 +840,40 @@ margin-left: 4px;
 
 
 .checkbox {
-  letter-spacing: 0.04em;
-  color: #8e8f99;;
-  line-height: 1.17;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+
+  /*
   position: relative;
-  display: flex;
-  align-items: center;
+
   cursor: pointer;
   user-select: none; 
-  
+  */
 }
 
 .checkmark {
-  
-  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
-  border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-
-  left: 0;
-  transform: translate(-50%);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  fill: transparent; 
- 
+  border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  margin-right: 8px;
+ 
 }
-
+/*
 .checkbox.label-form {
-  padding-left: 16px; /* Специализированный отступ только для чекбокса */
-}
+  padding-left: 16px; 
+}*/
 
 
 
