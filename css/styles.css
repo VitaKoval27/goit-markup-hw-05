@@ -729,10 +729,11 @@ ul {
 .wrapper-input:focus-within .icon-input {
   fill: #4d5ae5; /* блакитний кол иконки */
 }
+/*
 .wrapper-input:focus-within {
-  color: #4d5ae5; /* колір д для активного стану */
+  color: #4d5ae5; 
   border: 1px solid #4D5AE5; 
-}
+} */
 
 
 .input-form{
@@ -895,13 +896,6 @@ margin-left: 4px;
 
 }
 
-.icon-input{
-  top: 50%;
-  position: absolute;
-  left: 16px;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 
 
