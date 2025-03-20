@@ -563,7 +563,6 @@ ul {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
   border-radius: 4px;
   padding: 0px 24px;
   min-width: 165px;
@@ -579,7 +578,9 @@ ul {
   cursor: pointer;
   border: none;
 }
-
+.icon-frame{
+  margin-left: 16px;
+}
 
   
 
