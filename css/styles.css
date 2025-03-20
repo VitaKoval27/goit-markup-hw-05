@@ -523,7 +523,7 @@ ul {
 }
 
 .form-subscribe{
-  
+  gap: 24px;
   display: flex;
   flex-direction: row;
 }
@@ -579,9 +579,7 @@ ul {
   cursor: pointer;
   border: none;
 }
-.icon-frame{
-  margin-left: 16px;
-}
+
 
   
 
