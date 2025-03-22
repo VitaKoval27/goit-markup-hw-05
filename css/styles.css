@@ -523,7 +523,6 @@ ul {
 }
 
 .form-subscribe{
-  gap: 24px;
   display: flex;
   flex-direction: row;
 }
